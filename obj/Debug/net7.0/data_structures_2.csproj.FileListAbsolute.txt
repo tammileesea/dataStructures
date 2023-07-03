@@ -1,0 +1,15 @@
+/Users/tammilee/Projects/data_structures_2/data_structures_2/obj/Debug/net7.0/data_structures_2.csproj.AssemblyReference.cache
+/Users/tammilee/Projects/data_structures_2/data_structures_2/obj/Debug/net7.0/data_structures_2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tammilee/Projects/data_structures_2/data_structures_2/obj/Debug/net7.0/data_structures_2.AssemblyInfoInputs.cache
+/Users/tammilee/Projects/data_structures_2/data_structures_2/obj/Debug/net7.0/data_structures_2.AssemblyInfo.cs
+/Users/tammilee/Projects/data_structures_2/data_structures_2/obj/Debug/net7.0/data_structures_2.csproj.CoreCompileInputs.cache
+/Users/tammilee/Projects/data_structures_2/data_structures_2/obj/Debug/net7.0/data_structures_2.dll
+/Users/tammilee/Projects/data_structures_2/data_structures_2/obj/Debug/net7.0/refint/data_structures_2.dll
+/Users/tammilee/Projects/data_structures_2/data_structures_2/obj/Debug/net7.0/data_structures_2.pdb
+/Users/tammilee/Projects/data_structures_2/data_structures_2/bin/Debug/net7.0/data_structures_2
+/Users/tammilee/Projects/data_structures_2/data_structures_2/bin/Debug/net7.0/data_structures_2.deps.json
+/Users/tammilee/Projects/data_structures_2/data_structures_2/bin/Debug/net7.0/data_structures_2.runtimeconfig.json
+/Users/tammilee/Projects/data_structures_2/data_structures_2/bin/Debug/net7.0/data_structures_2.dll
+/Users/tammilee/Projects/data_structures_2/data_structures_2/bin/Debug/net7.0/data_structures_2.pdb
+/Users/tammilee/Projects/data_structures_2/data_structures_2/obj/Debug/net7.0/data_structures_2.genruntimeconfig.cache
+/Users/tammilee/Projects/data_structures_2/data_structures_2/obj/Debug/net7.0/ref/data_structures_2.dll
