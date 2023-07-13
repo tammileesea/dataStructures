@@ -3,12 +3,6 @@ using System.Runtime.Intrinsics.X86;
 
 namespace data_structures_2.src.DataStructures
 {
-	public class Node
-	{
-		public Node? next;
-		public int data;
-	}
-
 	public class SinglyLinkedList
 	{
 		private Node head;
@@ -22,18 +16,18 @@ namespace data_structures_2.src.DataStructures
 
 			while (current != null)
 			{
-				if (target.data == current.data)
+				if (target.Data == current.Data)
 				{
-					Console.WriteLine("Target node value of {0} exists in this list", current.data);
+					Console.WriteLine("Target node value of {0} exists in this list", current.Data);
 					return true;
 				}
-				else if (current.next == null && current.data != target.data)
+				else if (current.Next == null && current.Data != target.Data)
 				{
 					Console.WriteLine("The target node does not exist in this list");
 					return false;
 				}
 
-				current = current.next;
+				current = current.Next;
 			}
 
 			return false;
@@ -43,7 +37,7 @@ namespace data_structures_2.src.DataStructures
 		{
 			Node current = head;
 
-			newNode.next = current;
+			newNode.Next = current;
 			Console.WriteLine("New node has been added to the list");
 		}
 
@@ -53,10 +47,10 @@ namespace data_structures_2.src.DataStructures
 
 			while (current != null)
 			{
-				current = current.next;
+				current = current.Next;
 			}
 
-			current.next = newNode;
+			current.Next = newNode;
 		}
 
 		//nodes are already in ascending order, put in right place, even if its a dupe
@@ -65,16 +59,16 @@ namespace data_structures_2.src.DataStructures
 		{
 			Node current = head;
 
-			while (current.next != null)
+			while (current.Next != null)
 			{
-				if ((current.data == newNode.data || current.data < newNode.data)
-					&& current.next.data > newNode.data)
+				if ((current.Data == newNode.Data || current.Data < newNode.Data)
+					&& current.Next.Data > newNode.Data)
 				{
-					newNode.next = current.next;
-					current.next = newNode;
+					newNode.Next = current.Next;
+					current.Next = newNode;
 				}
 
-				current = current.next;
+				current = current.Next;
 			}
 		}
 
@@ -82,19 +76,19 @@ namespace data_structures_2.src.DataStructures
 		{
             Node current = head;
 
-			head = current.next;
+			head = current.Next;
         }
 
 		public void RemoveAtTail()
 		{
             Node current = head;
 
-            while (current.next != null)
+            while (current.Next != null)
             {
-				current = current.next;
+				current = current.Next;
             }
 
-			current.next = null;
+			current.Next = null;
         }
 
 		public void RemoveInMiddle(Node target)
@@ -103,13 +97,13 @@ namespace data_structures_2.src.DataStructures
 
 			while (current != null)
 			{
-				if (target.data == current.next.data) //[3][4][5]
+				if (target.Data == current.Next.Data) //[3][4][5]
 				{
-					current.next = current.next.next;
-					current.next = null;
+					current.Next = current.Next.Next;
+					current.Next = null;
 				}
 
-				current = current.next;
+				current = current.Next;
 			}
 		}
 	}
