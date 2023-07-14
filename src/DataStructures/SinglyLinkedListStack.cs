@@ -20,13 +20,12 @@ namespace data_structures_2.src.DataStructures
 			return null;
 		}
 
-		public Node Push(Node newNode)
+		public void Push(Node newNode)
 		{
 			if (top != null)
 			{
 				newNode.Next = top;
-
-				return top = newNode;
+				top = newNode;
 			}
         }
 
