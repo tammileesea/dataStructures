@@ -35,7 +35,20 @@ namespace data_structures_2.src.DataStructures
 			return top.Next;
 		}
 
-		public bool IsEmpty()
+        public int Size()
+        {
+            int size = 0;
+
+            while (top != null)
+            {
+                size++;
+                top = top.Next;
+            }
+
+            return size;
+        }
+
+        public bool IsEmpty()
 		{
 			return top == null;
 		}

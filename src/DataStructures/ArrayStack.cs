@@ -45,6 +45,11 @@ namespace data_structures_2.src.DataStructures
 			return false;
 		}
 
+		public int Size()
+		{
+			return stack.Count();
+		}
+
 		public bool IsFull()
 		{
             return stack.Count() < capacity ? false : true;
