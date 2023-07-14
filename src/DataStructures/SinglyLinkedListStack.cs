@@ -30,9 +30,14 @@ namespace data_structures_2.src.DataStructures
 
 		public Node Pop()
 		{
-			top = top.Next;
+			if (top != null && top.Next != null)
+			{
+                top = top.Next;
 
-			return top.Next;
+                return top.Next; //return new head
+            }
+
+			return null;
 		}
 
         public int Size()

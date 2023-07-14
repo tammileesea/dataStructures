@@ -25,24 +25,22 @@ namespace data_structures_2.src.DataStructures
 			{
 				stack[stack.Count()] = newElement;
 			}
+			else
+			{
+				int newSize = capacity * 2;
+				int[] newStack = new int[newSize];
+
+				stack.CopyTo(newStack, 0);
+				stack = newStack;
+			}
 		}
 
 		public void Pop()
 		{
-			if (!IsEmpty())
+			if (stack.Count() > 0)
 			{
 				stack = stack.Take(stack.Count() - 1).ToArray();
 			}
-		}
-
-		public bool IsEmpty()
-		{
-			if (stack.Count() < 1)
-			{
-				return true;
-			}
-
-			return false;
 		}
 
 		public int Size()
