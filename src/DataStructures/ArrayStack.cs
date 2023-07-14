@@ -1,20 +1,20 @@
 ﻿using System;
 namespace data_structures_2.src.DataStructures
 {
-	public class Stack
+	public class ArrayStack
 	{
 		private int[] stack;
 		private int top;
 		private int capacity;
 
-		public Stack(int size)
+		public ArrayStack(int size)
 		{
 			stack = new int[size];
 			top = -1;
 			capacity = size;
 		}
 
-		public int ReadFinalElement()
+		public int ReadTopElement()
 		{
 			return stack.Last();
 		}
