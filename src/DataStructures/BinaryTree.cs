@@ -18,23 +18,23 @@ namespace data_structures_2.src.DataStructures
 
         public Node Root { get; set; }
 
-        public void DepthFirstValues(Node root)
-        {
-            var stack = string[]();
+        //public void DepthFirstValues(Node root)
+        //{
+        //    var stack = string[]();
 
-            while (stack.length > 0)
-            {
-                if (current.Right.Value != null)
-                {
-                    stack.Add(current.Right);
-                }
+        //    while (stack.length > 0)
+        //    {
+        //        if (current.Right.Value != null)
+        //        {
+        //            stack.Add(current.Right);
+        //        }
 
-                if (current.Left.Value != null)
-                {
-                    stack.Add(current.Left);
-                }
-            }
-        }
+        //        if (current.Left.Value != null)
+        //        {
+        //            stack.Add(current.Left);
+        //        }
+        //    }
+        //}
     }
 }
 
